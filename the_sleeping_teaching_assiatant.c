@@ -25,6 +25,11 @@ do
 printf("Enter Current Time in 24 hr Format...\n");
 scanf("%d",&t);
 
+if(t<8||t>20)
+{
+printf("It is Not an Office Hour.TA is Sleeping... Visit Later.\n");
+continue;
+}
 printf("Enter the number of Students...\n");
 scanf("%d",&n);
 }while((n<1)||(t<8)||(t>20));
