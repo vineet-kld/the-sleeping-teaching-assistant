@@ -18,8 +18,17 @@ int front=0,rear=0,waiting=0,sleeping=0;
 
 int main()
 {
-int n=3;
-  
+int n=0,t;
+
+do
+{
+printf("Enter Current Time in 24 hr Format...\n");
+scanf("%d",&t);
+
+printf("Enter the number of Students...\n");
+scanf("%d",&n);
+}while((n<1)||(t<8)||(t>20));
+
 pthread_t Student[n];
 pthread_t TA;
 
